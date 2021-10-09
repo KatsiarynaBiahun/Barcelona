@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="barcelona.css" type="text/css" />
+    <title>Barcelona</title>
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="barcelona.html">BARCELONA</a>
+      <a href="majoitus.html" class="active">MAJOITUS</a>
+      <a href="julkinenliikenne.html">JULKINEN LIIKENNE</a>
+      <a href="museot.html">MUSEOT</a>
+      <a href="vuori.html">VUORI</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <table id="majoitus">
+      <tr>
+        <td>
+          <a
+            href="https://www.booking.com/city/es/barcelona.fi.html?aid=1610691;label=barcelona-JAPRYqRRY4ztJ2kSJ5NtZgS379598050794:pl:ta:p1:p2:ac:ap:neg:fi:tiaud-297601666995:kwd-123261865:lp1005620:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YURcq_26dhSxihXrz_tjgj8;ws=&gclid=CjwKCAjwhMmEBhBwEiwAXwFoEVacmxBDxIcZl9lVMleud0_YzanCT2ySK0q16YvTme8DMxUlF1Lb7hoCSlIQAvD_BwE"
+            target="_blank"
+            ><img src="booking_logo_icon_169473.png" alt="Booking" width="50%"
+          /></a>
+        </td>
+
+        <td></td>
+        <td rowspan="3">
+          <img id="border" src="majoitus.jpg" alt="Majoitus" width="80%" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a
+            href="https://www.airbnb.fi/a/stays/Barcelona--Espanja?af=43720035&c=.pi0.pk43602316556_200879188078_c_303426328039&sem_position=&sem_target=kwd-303426328039&location_of_interest=&location_physical=1005620&localized_ghost=true&gclid=CjwKCAjwhMmEBhBwEiwAXwFoEd-AHeBDAKRxvZ2D15sWcOTsGJ4FB-JiKXqcRlt4-8uSkdpJ2U7z2xoCWmAQAvD_BwE"
+            target="_blank"
+            ><img src="airbnb_logo_icon_170606.png" alt="Airbnb" width="50%"
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.tripadvisor.fi/SmartDeals-g187497-Barcelona_Catalonia-Hotel-Deals.html"
+            target="_blank"
+            ><img
+              src="tripadvisor_logo_icon_169415.png"
+              alt="Tripadvisor"
+              width="50%"
+          /></a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

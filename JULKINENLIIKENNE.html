@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="barcelona.css" type="text/css" />
+    <title>Barcelona</title>
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="barcelona.html">BARCELONA</a>
+      <a href="majoitus.html">MAJOITUS</a>
+      <a href="julkinenliikenne.html" class="active">JULKINEN LIIKENNE</a>
+      <a href="museot.html">MUSEOT</a>
+      <a href="vuori.html">VUORI</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <table id="liikenne" class="eka">
+      <tr>
+        <td id="eka">
+          <h1>T-casual</h1>
+          <p>Individual 10-journey ticket.</p>
+          <ul>
+            <li>1 zone - €11.35</li>
+            <li>2 zone - €22.40</li>
+            <li>3 zone - €30.50</li>
+            <li>4 zone - €39.20</li>
+            <li>5 zone - €45.05</li>
+            <li>6 zone - €47.90</li>
+          </ul>
+        </td>
+        <td id="toka">
+          <a
+            href="https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-casual"
+            target="_blank"
+            >Lue lisää</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="eka">
+          <h1>Montjuïc Funicular Railway</h1>
+          <h3>Montjuïc funicular operating hours</h3>
+          <ul>
+            <li>Autumn-winter</li>
+            <ul>
+              <li>Monday to Friday: 7.30 am to 8.00 pm</li>
+              <li>Saturday, Sunday and public holidays: 9.00 am to 8.00 pm</li>
+            </ul>
+            <li>Spring-summer</li>
+            <ul>
+              <li>Monday to Friday: 7.30 am to 10.00 pm</li>
+              <li>Saturday, Sunday and public holidays: 9.00 am to 10.00 pm</li>
+            </ul>
+          </ul>
+        </td>
+        <td id="toka">
+          <a
+            href="https://www.tmb.cat/en/about-tmb/transport-tmb/montjuic-funicular"
+            target="_blank"
+            >Lue lisää</a
+          >
+        </td>
+      </tr>
+
+      <tr>
+        <td id="eka">
+          <h1>Telefèric de Montjuïc | Barcelona Cable Car</h1>
+          <ul>
+            <li>adult: over 12 years - 13.5 €</li>
+            <li>child: from 4 to 12 years - 9.7 €</li>
+            <li>under 4 years - 0.0 €</li>
+          </ul>
+        </td>
+        <td id="toka">
+          <a href="https://www.telefericdemontjuic.cat/en" target="_blank"
+            >Lue lisää</a
+          >
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

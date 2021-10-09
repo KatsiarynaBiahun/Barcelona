@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="barcelona.css" type="text/css" />
+    <title>Barcelona</title>
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="barcelona.html">BARCELONA</a>
+      <a href="majoitus.html">MAJOITUS</a>
+      <a href="julkinenliikenne.html">JULKINEN LIIKENNE</a>
+      <a href="museot.html" class="active">MUSEOT</a>
+      <a href="vuori.html">VUORI</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <table id="majoitus">
+      <tr>
+        <td>
+          <p>Sagrada Família</p>
+          <iframe
+            id="museot"
+            src="https://www.youtube.com/embed/0Piux9Z2p2o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </td>
+        <td>
+          <a href="https://sagradafamilia.org/en/" target="_blank"
+            ><img
+              id="ticket"
+              src="Ticket_icon-icons.com_54128.png"
+              alt="Buy tickets"
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Casa Batlló</p>
+          <iframe
+            id="museot"
+            src="https://www.youtube.com/embed/G7pPXEG26zQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </td>
+        <td>
+          <a href="https://www.casabatllo.es/en/online-tickets/" target="_blank"
+            ><img
+              id="ticket"
+              src="Ticket_icon-icons.com_54128.png"
+              alt="Buy tickets"
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Hospital de Sant Pau</p>
+          <iframe
+            id="museot"
+            src="https://www.youtube.com/embed/xAJaQuL1MA8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </td>
+        <td>
+          <a
+            href="https://tickets.santpaubarcelona.org/muslinkIII/venda/index.jsp?nom_cache=SANTPAU&property=SANTPAU&grupActiv=1&lang=3#close"
+            target="_blank"
+            ><img
+              id="ticket"
+              src="Ticket_icon-icons.com_54128.png"
+              alt="Buy tickets"
+          /></a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
